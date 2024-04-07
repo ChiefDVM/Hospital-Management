@@ -1,0 +1,191 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    height: 2.5%;
+    background-color: rgb(48, 192, 175);
+    padding: 10px;
+    display: flex;
+}
+
+.navbar .chettinad{
+    display: flex;
+}
+
+.navbar img{
+    width: 5rem;
+}
+
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.chettinad h1{
+    height: 2.5%;
+    background-color: rgb(48, 192, 175);
+    padding: 10px;
+}
+
+.login-page h2{
+    text-align: center;
+}
+
+.patientLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 50px 0;
+    color: rgb(48, 94, 192);
+    background-color: rgb(229, 227, 227);
+    max-width: 20%;
+    min-width: 370px;
+    margin-left: 40%;
+} 
+
+a.loginButton{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(48, 192, 175);
+    vertical-align: middle;
+    transition: all 400ms ease-in-out;
+    width: 8rem;
+    margin-left: 35%;
+}
+
+a.loginButton:hover{
+    background-color: rgb(37, 147, 135);
+    border-bottom: 3px solid rgb(29, 114, 104);
+}
+
+.logo{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.about p{
+    font-size: 25px;
+}
+
+.information{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(229, 227, 227);
+    padding-top: 70px;
+    justify-content: space-evenly;
+}
+
+.information img{
+    width: 350px;
+    height: 70%;
+    border: 2px solid;
+}
+
+.pfp1{
+    /* margin: auto; */
+    /* display: block; */
+    width: 15rem;
+    border: 1px solid;
+}
+
+/* .patient-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 5%;
+} */
+
+.patient-profile{
+    padding-top: 90px;
+    padding-left: 90px;
+    display: flex;
+}
+
+.patientProfilePic{
+    padding-right: 100px;
+    border-right: 1px solid black;
+}
+
+.patientProfileInfo{
+    padding-left: 100px;
+}
+
+.patientProfileInfo p{
+    font-size: 25px;
+}
+
+.patientProfileInfo h1{
+    color: rgb(48, 94, 192);
+    
+}
+.footer{
+    margin-top:10%;
+    background-color: rgb(48, 192, 175);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+::selection{
+    color: white;
+    background-color: rgb(48, 192, 175);
+}
+
+.search-container{
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    /* padding: 0px 20px; */
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+  /* box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2); */
+}
+
+.search-container:hover > .search-input{
+    width: 400px;
+    /* background-color: rgb(48, 192, 175); */
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+    padding-left: 10px;
+}
+
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+
