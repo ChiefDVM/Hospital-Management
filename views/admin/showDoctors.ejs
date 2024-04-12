@@ -69,13 +69,13 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('search-input');
-            const patientRows = document.querySelectorAll('.doctor-row');
+            const doctorRows = document.querySelectorAll('.doctor-row');
     
             searchInput.addEventListener('input', function() {
                 const searchTerm = searchInput.value.trim().toLowerCase();
                 let visibleCount = 0;
     
-                patientRows.forEach(row => {
+                doctorRows.forEach(row => {
                     const nameCell = row.querySelector('.name');
                     const name = nameCell.textContent.trim().toLowerCase();
                     
