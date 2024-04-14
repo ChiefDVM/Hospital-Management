@@ -1,20 +1,25 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const passport = require('passport');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 const adminSchema = new Schema({
-    name: {
+    username: {
         type: String,
-        required: [true, 'name cannot be blank']
+        required: [true, 'Name cannot be blank']
     },
     ID: {
         type: String,
         required: [true, 'Admin ID cannot be blank']
     },
-    mobile: Number,
-    age: Number,
-    sex: String,
-    address: String
 })
+
+const options = {
+    usernameField: 'ID'
+}
+
+adminSchema.plugin(passportLocalMongoose, options);
+
 
 const Admin = mongoose.model('Admin', adminSchema);
 

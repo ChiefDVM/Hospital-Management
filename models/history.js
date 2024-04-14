@@ -11,9 +11,13 @@ const historySchema = new Schema({
         ref: 'Doctor'
     },
     date: Date,
-    Symptom: String,
-    Prescription: String
+    symptom: String,
+    prescription: String
 });
+
+historySchema.virtual('formattedDate').get(function() {
+    return this.date.toISOString().split('T')[0]; // Extracts date part in "year-month-day" format
+  });
 
 const History = mongoose.model('History', historySchema);
 

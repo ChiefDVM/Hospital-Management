@@ -4,9 +4,9 @@ const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 
 const patientSchema = new Schema({
-    name: {
+    username: {
         type: String,
-        required: [true, 'name cannot be blank']
+        required: [true, 'Name cannot be blank']
     },
     ID: {
         type: String,
@@ -15,8 +15,20 @@ const patientSchema = new Schema({
     mobile: Number,
     age: Number,
     sex: String,
-    address: String
+    address: String,
+    histories: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'History'
+        }
+    ]
 })
+
+const options = {
+    usernameField: 'ID'
+}
+
+patientSchema.plugin(passportLocalMongoose, options);
 
 const Patient = mongoose.model('Patient', patientSchema);
 
