@@ -56,8 +56,8 @@ app.use((req, res, next) => { // every template will have access to this informa
     next();
 });
 
-app.get('/', (req, res) => {
-    res.send("HELLO")
+app.get('/home', (req, res) => {
+    res.render('main/home');
 })
 
 app.get('/login', (req, res) => {

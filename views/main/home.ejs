@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Define animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Apply animation to the text inside red line */
+        #ambulance-text {
+            animation: slide 20s linear infinite;
+            white-space: nowrap; /* Prevent text from wrapping */
+            display: inline-block; /* Display as inline block to allow overflow */
+        }
+
+        /* Container for red strip */
+        #red-strip {
+            background-color: red;
+            text-align: center;
+            margin-top: 2%;
+            padding: 2%;
+            overflow: hidden; /* Hide overflow content */
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="chettinad">
+            <img src="/photos/ChettinadLogo2.png" alt="img">
+            <h1>Chettinad Hospital</h1>
+        </div>
+        <div>
+            <a class="btn btn-warning" style="float:right;" href="/login">Login</a>
+        </div>
+    </header>
+
+    <div id="red-strip">
+        <div id="ambulance-text"><h5>For ambulance call at +91 ******</h5></div>
+    </div>
+
+    <div id="nehang" style="display:flex;">
+        <div style="margin-top:10%;margin-left:5%;text-align:center;margin-right:30%;"><h1>Your health,Our mission!</h1><p><i style="font-size: larger;">Caring for your well-being is at the heart of our <br> mission. From comprehensive treatments to <br> compassionate care, we are dedicated to ensuring <br> your health and comfort every step of the way.</i></p></div>
+        <div><img src="/photos/hosptial.jpeg"></div>
+    </div>
+
+    <div style="display:flex;margin-top:10%">
+        <div style="text-align:center; width: 50%;"><h5>150+ beds and<br>50+ ICU beds</h5><p><i style="font-size: larger;">Experience unparalleled care with our expansive facility featuring over 150 beds,<br>including 50+ ICU beds,<br> equipped to meet the diverse medical needs of our patients with precision and compassion.</i></p></div>
+        <div style="width: 50%; text-align: center;"><i class="fa-solid fa-bed" style="font-size:100px;"></i></div>
+    </div>
+
+    <div style="display: flex; margin-top: 10%;">
+        <div style="width: 50%; text-align: center;"><i class="fa-solid fa-x-ray" style="font-size: 100px;"></i></div>
+        <div style="text-align:center; width: 50%;"><h5>Advanced Medical Equipment</h5><p><i style="font-size: larger;"> State-of-the-art medical equipment and<br> technology facilitate accurate diagnosis and treatment, ensuring patients receive the highest quality care available.</i></p></div>
+    </div>
+
+    <div style="display:flex;margin-top:10%">
+        <div style="text-align:center; width: 50%;"><h5>Expert Medical Staff:</h5><p><i style="font-size: larger;">A team of skilled and experienced healthcare professionals, including doctors, nurses, and<br> support staff, provide compassionate and comprehensive care to patients.</i></p></div>
+        <div style="width: 50%; text-align: center;"><i class="fa-solid fa-staff-snake" style="font-size:100px;"></i></div>
+    </div>    
+
+    <div style="width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(229, 227, 227);
+    padding-top: 70px;">
+        <h2>Our medical team:</h2>
+        <div class="information" style="margin-top: 0%;">
+            <div class="table1">
+                <img src="/photos/profilePic.jfif" alt="pfp" class="pfp">
+                <h2>Dr. ABC(MBBS)</h2>
+            </div>
+
+            <div class="table2">
+                <img src="/photos/profilePic.jfif" alt="history" class="pfp">
+                <h2>Dr.DEF(MBBS+Gynac)</h2>
+            </div>
+
+            <div class="table2">
+                <img src="/photos/profilePic.jfif" alt="history" class="pfp">
+                <h2>Dr. MXY</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="about">
+            <img src="/photos/ChettinadLogo.PNG" alt="" style="border-radius: 10%; margin-left: 30px;">
+            <br>
+            <br>
+            <h2>ABOUT</h2>
+            <p>Chettinad Hospital & Research Institute (CHRI), a constituent college of Chettinad Academy of Research and Education (CARE), a Deemed to be University Under Section 3 of the UGC Act 1956 at Kelambakkam, Chennai through its primary health centre in the VIT, Vellore Campus provides round the clock primary (basic) health care services to all the students, staff and their dependents, faculty and their dependents and other employees working/residing at VIT Vellore Campus.</p>
+            <br>
+            <h2>FOLLOW US</h2>
+            <h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </h2>
+        </div>
+        <div class="app">
+            <h2>INSTALL APP</h2>
+            <p>From App Store or Google Play</p>
+            <h2>
+                <i class="fa-brands fa-app-store"></i>
+                <i class="fa-brands fa-google-play"></i>
+            </h2>
+            <br><br><br>
+            <h2>PAYMENT GATEWAYS</h2>
+            <h2>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i> <br>
+                <i class="fa-brands fa-cc-stripe"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
