@@ -70,6 +70,18 @@ router.get('/:name', catchAsync(async (req, res) => {
     res.render('admin/home', { admin });
 }))
 
+router.put('/:name', catchAsync(async (req, res) => {
+    const { name } = req.params;
+    const updatedAdmin = await Admin.findOneAndUpdate({username: name}, {...req.body.admin});
+    res.redirect(`/admin/${req.body.admin.username}/info`);
+}))
+
+router.get('/:name/edit', catchAsync(async (req, res) => {
+    const { name } = req.params;
+    const admin = await Admin.findOne({username: name});
+    res.render('admin/edit', { admin });
+}))
+
 router.get('/:name/info', catchAsync(async (req, res) => {
     const { name } = req.params;
     const admin = await Admin.findOne({username: name});
